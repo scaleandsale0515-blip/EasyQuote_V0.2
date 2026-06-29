@@ -190,7 +190,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                 .where((inv) => inv.date.year == m.year && inv.date.month == m.month)
                 .fold(0.0, (s, inv) => s + inv.total))
             .toList();
-        const monthLabels = ['J', 'F', 'M', 'A', 'M', 'J', 'J', 'A', 'S', 'O', 'N', 'D'];
+        const monthLabels = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'];
         labels = months.map((m) => monthLabels[m.month - 1]).toList();
         break;
     }
